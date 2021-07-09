@@ -8,7 +8,7 @@ var backgroundImg;
 var bg ;
 
 function preload() {
-    getBackgroundImg(backgroundImg);
+    getBackgroundImg();
 }
 
 function setup(){
@@ -19,13 +19,13 @@ function setup(){
 }
 
 function draw(){
-
+    if(backgroundImg)
+        background(backgroundImg);
     
 
 
     Engine.update(engine);
 
-    // write code to display time in correct format here
 
 
 }
